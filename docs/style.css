@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 1s;
+}
+
+body {
+    height: 100vh;
+    background-color: rgba(255, 166, 0, 0.493);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 300px;
+    padding-top: 60px;
+    border-radius: 25px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+
+#tgBtn {
+    position: absolute;
+    color: white;
+    transition: 1s;
+    font-size: 30px;
+    text-align: center;
+    top: 10px;
+    right: 10px;
+}
+
+.conteiner {
+    display: grid;
+    grid-template-columns: repeat(1fr, 4);
+    grid-template-rows: repeat(1fr, 5);
+    grid-gap: 20px 10px;
+    grid-template-areas:
+        "delAl . del dev"
+        "se ei na ang"
+        "fo fi si minus"
+        "one two tree plus"
+        "dot zi ecual ecual";
+    background-color: rgb(87, 87, 87);
+    padding: 15px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-radius: 25px;
+}
+
+form input {
+    color: rgba(255, 166, 0, 0.625);
+    outline: none;
+    background-color: transparent;
+    font-size: 25px;
+    grid-area: scrin;
+    padding: 20px 32px;
+    border: none;
+}
+
+::placeholder {
+    color: rgba(255, 166, 0, 0.625);
+}
+
+
+#on {
+    grid-area: one;
+}
+
+#tw {
+    grid-area: two;
+}
+
+#tr {
+    grid-area: tree;
+}
+
+#del {
+    grid-area: del;
+}
+
+#fo {
+    grid-area: fo;
+}
+
+#fi {
+    grid-area: fi;
+}
+
+#si {
+    grid-area: si;
+}
+
+#delAl {
+    grid-area: delAl;
+}
+
+#se {
+    grid-area: se;
+}
+
+#ei {
+    grid-area: ei;
+}
+
+#na {
+    grid-area: na;
+}
+
+#zi {
+    grid-area: zi;
+}
+
+#plus {
+    grid-area: plus;
+}
+
+
+#ecual {
+    grid-area: ecual;
+    font-size: 20px;
+    border: none;
+    /* box-shadow: 5px 8px 10px 0px green; */
+    box-shadow: 5px 8px 10px 0px black;
+    border-radius: 50px;
+    padding: 14px 0;
+    background-color: rgb(14, 144, 14);
+}
+
+#minus {
+    grid-area: minus;
+}
+
+#dev {
+    grid-area: dev;
+}
+
+#ang {
+    grid-area: ang;
+}
+
+#dot {
+    grid-area: dot;
+}
+
+.btn {
+    font-size: 20px;
+    padding: 5px;
+    margin: 5px;
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+
+.btnT2 {
+    width: 50px;
+    color: rgb(85, 85, 85);
+    border-top: 1px solid rgba(0, 0, 0, 0);
+    font-size: 20px;
+    border: none;
+    box-shadow: 5px 8px 10px 0px;
+    border-radius: 50px;
+    padding: 14px 0;
+    background-color: orange;
+
+}
+/* 
+.btnT2:hover,
+#ecual:hover {
+    box-shadow: inset 5px 8px 10px 0px;
+
+    border-top: 1px solid white;
+} */
